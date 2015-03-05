@@ -10,7 +10,7 @@ var $panel =$('.panel');
 var $btnBouncein =$('.btn-bounce');
 var $circle =$('.circle');
 
-var $appendexpand =$('.append-expand');
+var $btnAppend =$('.btn-append');
 var $list =$('.list');
 
 
@@ -34,6 +34,8 @@ $circle.on('webkitAnimationEnd animationend', function () {
     $circle.removeClass('js-bounce-in');
 });
 
-$list.on('click', function () {
-   
+$btnAppend.on('click', function () {
+    var $li = $('<li>').html('NewList');
+    $list.prepend($li);
+    $li.toggleClass('js-li');
 });

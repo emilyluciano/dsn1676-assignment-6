@@ -94,6 +94,10 @@ div {
   color: mediumpurple;
 }
 
+.js-li {
+animation: js-li 200ms linear fowards;
+}
+
 .js-show-hide{
  opacity: 0;
 }
@@ -167,6 +171,29 @@ max-height: 10em;
  }
 }
 
+@keyframes js-li {
+ 
+ 0% {
+  max-height: 0em;
+ }
+ 
+100% {
+ max-height: 2em;
+}
+ }
+
+
+
+@-webkit-keyframes js-li {
+
+ 0% {
+  max-height: 0em;
+ }
+
+100% {
+ max-height: 2em;
+}
+}
 
 
 
