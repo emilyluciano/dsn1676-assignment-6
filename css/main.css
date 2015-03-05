@@ -107,3 +107,71 @@ right: -100px;
 .js-collapse-expand{
 max-height: 10em;
 }
+
+.js-bounce-in {
+-webkit-animation: bounce-in 1s linear;
+  animation: bounce-in 1s linear;
+}
+
+@-webkit-keyframes bounce-in {
+ 0% {
+     right: -100px;
+}
+    
+ 25% {
+  top: 15px;
+ }
+
+ 50% {
+  top:  75px;
+ 
+ }
+    
+ 75% {
+  top: 15px;
+ }
+
+ 90% {
+  top: 60px;
+ }
+
+ 100% {
+  right: 200px;
+ }
+}
+
+@keyframes bounce-in {
+ 0% {
+     right: -100px;
+}
+    
+ 25% {
+  top: 15px;
+ }
+
+ 50% {
+  top:  75px;
+ 
+ }
+    
+ 75% {
+  top: 15px;
+ }
+
+ 90% {
+  top: 60px;
+ }
+
+ 100% {
+  right: 200px;
+ }
+}
+
+
+
+
+
+
+
+
+
